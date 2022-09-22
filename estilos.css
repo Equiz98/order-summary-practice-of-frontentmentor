@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 98%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.portada-textos {
+    background-color: white;
+    width: 450px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.137);
+    margin: 30px;
+}
+
+
+.portada img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.portada-textos h2 {
+    margin: 40px 0px 20px 0px;
+}
+
+.portada-textos>p {
+    width: 300px;
+    text-align: center;
+    opacity: 50%;
+}
+
+
+/* ------- Codigo para elementos de plan anual ------- */
+
+.portada-textos .plan-container {
+    width: 300px;
+    margin: 15px 0px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portada-textos .plan-container .plan-container-texto h2 {
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    margin: 0px;
+}
+
+.portada-textos .plan-container .plan-container-texto h3 {
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.plan-container-texto {
+    margin-right: 60px;
+}
+
+/* ------- Codigo para botones de la card ------- */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.procesar-orden {
+    background-color: hsl(245, 75%, 52%);
+    font-family: 'Red hat Display';
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border-style: none;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 1px 5px 25px hsla(245, 75%, 52%, 0.50);
+    width: 100%;
+}
+
+.cancelar-orden {
+    background-color: white;
+    font-family: 'Red hat Display';
+    color: black;
+    opacity: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    border-style: none;
+    height: 40px;
+    margin: 5px;
+}
+
+/* ------------------EFECTOS HOVER---------------- */
+
+.plan-container a:hover {
+    color: #766cf1;
+    cursor: pointer;
+}
+
+.button-container .procesar-orden:hover {
+    background-color: #766cf1;
+    cursor: pointer;
+}
+
+.button-container .cancelar-orden:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* --------------------MEDIA QUERIES------------------- */
+
+@media only screen and (max-width: 500px) {
+
+    .portada-textos {
+        width: 90%;
+    }
+
+    .portada img {
+        width: 100%;
+    }
+
+    .portada-textos .plan-container {
+        width: 75%;
+    }
+
+    .plan-container-texto {
+        margin-right: 30px;
+    }
+
+    .portada-textos .plan-container {
+        margin: 30px 0px;
+    }
+}
